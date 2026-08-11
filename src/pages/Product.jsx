@@ -19,8 +19,11 @@ const Product = () => {
 
   return (
     <>
+    <div className='min-h-screen'>
+
     <FormProduct updateItem = {setItem}/>
     <TableProduct item = {item}/>
+    </div>
     </>
   )
 }
