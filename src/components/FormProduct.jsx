@@ -12,8 +12,8 @@ function FormProduct({updateItem}) {
       // setItem()
       updateItem((prevState)=>{
         const newItem = [...prevState, product]
-        // console.log(newItem)  
-        updateItem(newItem)
+        // updateItem(newItem)
+        return newItem
       })
   }
 
