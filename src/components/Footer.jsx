@@ -1,8 +1,6 @@
-    // import React from 'react'
-
     const Footer = () => {
     return (
-        <footer className="p-3 bg-orange-700">
+        <footer className="p-3 bg-amber-700">
             ini footer
         </footer>
     )
