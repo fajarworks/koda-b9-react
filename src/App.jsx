@@ -5,7 +5,10 @@ import Product from "./pages/Product";
 import Home from "./pages/Home";
 import MainLayout from "./layout/MainLayout";
 import DetailPage from "./pages/DetailPage";
-// import Profile from './pages/ProfileForm.jsx'
+import Login from "./pages/Login";
+import ProfileForm from "./pages/ProfileForm";
+import SurveyPenonton from "./pages/SurveyPenonton";
+import TodoApp from "./pages/TodoApp";
 
 function App() {
   return (
@@ -13,14 +16,18 @@ function App() {
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
         <Route path="counter" element={<Counter />} />
-        {/* <Route path="pokemon" element={<FetchPokemon />} />*/}
+        <Route path="pokemon" element={<FetchPokemon />} />
+        <Route path="login" element={<Login />} />
+        <Route path="profile" element={<ProfileForm/>} />
 
         <Route path="pokemon">
           <Route index element={<FetchPokemon />} />
           <Route path=":id" element={<DetailPage />} />
         </Route>
 
+        <Route path="survey-penonton" element={<SurveyPenonton/> } />
         <Route path="product" element={<Product />} />
+        <Route path="todo-app" element={<TodoApp/> } />
       </Route>
     </Routes>
   );
